@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link type="image/png" sizes="16x16" rel="icon" href="images/icons8-la-16.png">
+    <title>LuSite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="images/menu.png" class="menu-img">
+            <img src="images/logo3.png" class="logo">
+            <ul>
+                <li>Click Here To See The Magic</li>
+            </ul>
+            <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+        </nav>
+
+        <div class="lamp-container">
+            <img src="images/lamp.png" class="lamp">
+            <img src="images/light.png" class="light" id="light">
+        </div>
+        <div class="icons">
+            <a href="https://www.instagram.com/lulu.ahahaha/"><i class="ri-instagram-line"></i></a>
+            <a href="https://github.com/luluahahaha"><i class="ri-github-fill"></i></a>
+            <a href="https://www.linkedin.com/in/lulu-ahahaha"><i class="ri-linkedin-box-fill"></i></a>
+        </div>
+        <div class="text-container">
+            <h1>LuSite <br> For Draf</h1>
+            <p>LuSite adalah Simple Website Pertama yang saya buat dari nol. <br>
+                Website ini berisi berbagai jenis Project yang saya buat.
+            </p>
+            <a href="satu.html">My Draf</a>
+            <a href="https://luluahahaha.github.io/portofolio.id/">My Portofolio</a>
+            <div class="control">
+                <p>04</p>
+                <div class="line"><span></span></div>
+                <p>05</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var btn = document.getElementById("btn");
+        var light = document.getElementById("light");
+
+        function toggleBtn(){
+            btn.classList.toggle("active");
+            light.classList.toggle("on");
+        }
+    </script>
+</body>
+</html>
+
